@@ -50,15 +50,17 @@
   
   $query2="select * from tbl_users";
   $result = mysqli_query($conn,$query2);
- 
+  $count=0;
   while ($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
-                        
     $pdf->Cell($columnWidth, $rowHeight,$row['user_id'], 1, 0, 'C');
     $pdf->Cell($columnWidth, $rowHeight,$row['name'], 1, 0, 'C');
     $pdf->Cell($columnWidth, $rowHeight,$row['email'], 1, 0, 'C');
     $pdf->Cell($columnWidth, $rowHeight,$row['password'], 1, 0, 'C');
     $pdf->Ln(); 
+    $count++;
     }
+  $pdf->Cell($columnWidth, $rowHeight,"total count is:".$count, 1, 0, 'C');
+  $pdf->Ln(); 
  $pdf->Output();
  
  

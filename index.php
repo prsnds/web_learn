@@ -3,7 +3,7 @@ include "db/connection.php";
     if(isset($_POST['submit'])){
         
         $user_id=$_POST['user_id'];
-        $name=$_POST['user_id'];
+        $name=$_POST['name'];
         $email=$_POST['email'];
         $password=$_POST['password'];
 
@@ -33,7 +33,7 @@ include "db/connection.php";
 </head>
 
 <body>
-    <form action="printPdf.php" method="post">
+    <form action="index.php" method="post">
         <div class="id">
             id:<input type="text" name="user_id">
         </div>
@@ -53,7 +53,7 @@ include "db/connection.php";
 </html>
 
 <?php 
-    $query2="select * from tbl_users";
+    $query2="select * from tbl_users order by user_id";
     $result = mysqli_query($conn,$query2);
     ?>
  <table>
@@ -63,7 +63,8 @@ include "db/connection.php";
          <th>email</th>
          <th>password</th>
      </tr>
-         <?php 
+         <?php
+
                    while ($row=mysqli_fetch_array($result,MYSQLI_ASSOC))
                  {
                   
@@ -74,5 +75,7 @@ include "db/connection.php";
                      echo "<td>".$row['password']."</td>";
                      echo "</tr>";
                  }
+                
+                
         ?>
 
