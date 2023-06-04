@@ -27,10 +27,11 @@
             echo "</select>";
 
             ?>
-            <input type="submit" value="submit">
-            <?php 
-            if ($_POST["submit"]) {
-                var_dump($_POST['country']);
+        <input type="submit" value="submit">
+            <?php
+            if ($_POST["country"]!= null ) {
+                $j=$_POST['country'];
+              echo  $code[$j];
             }
 
             ?>
