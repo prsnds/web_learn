@@ -16,27 +16,21 @@ $result_1=mysqli_query($conn,$query3);
 
 <body>
     <div class="main">
-        <form action="dropdown_index.php" method="post">
+        <form action="rr.php" method="post">
 
             <?php
+            $i=0;
             echo "<select name='country' >";
-            while ($row=mysqli_fetch_array($result_1,MYSQLI_ASSOC)){
-                echo "<option value=>" .$row['country']. "</option>";
+            while ($row=mysqli_fetch_array($result_1)){
+                echo "<option value= $i>" .$row['country']. "</option>";
+                $i++;
+
             }
             ?>
-            
 
-        <input type="submit" value="submit">
+
+        <input type="submit" value="submit" name="submit">
         </form>
-        <?php 
-        
-        
-        
-        
-        
-        
-        
-        ?>
 
 
     </div>
