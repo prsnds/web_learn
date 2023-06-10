@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2023 at 01:52 PM
+-- Generation Time: Jun 10, 2023 at 01:39 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -37,13 +37,87 @@ CREATE TABLE `tbl_countries` (
 --
 
 INSERT INTO `tbl_countries` (`country`, `code`) VALUES
-('bangladesh', ''),
-('usa', ''),
-('italy', ''),
-('france', ''),
-('germany', ''),
-('turkey', ''),
-('india', '');
+('bangladesh', '10'),
+('usa', '3'),
+('italy', '5'),
+('france', '6'),
+('germany', '7'),
+('india', '5');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_districts`
+--
+
+CREATE TABLE `tbl_districts` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `division_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_districts`
+--
+
+INSERT INTO `tbl_districts` (`id`, `name`, `division_id`) VALUES
+(1, 'Dhaka', 1),
+(2, 'Gazipur', 1),
+(3, 'Narayanganj', 1),
+(4, 'Tangail', 1),
+(5, 'Chittagong', 2),
+(6, 'Cox\'s Bazar', 2),
+(7, 'Rangamati', 2),
+(8, 'Khagrachari', 2),
+(9, 'Rajshahi', 3),
+(10, 'Natore', 3),
+(11, 'Chapainawabganj', 3),
+(12, 'Pabna', 3),
+(13, 'Khulna', 4),
+(14, 'Jessore', 4),
+(15, 'Satkhira', 4),
+(16, 'Bagerhat', 4),
+(17, 'Barisal', 5),
+(18, 'Bhola', 5),
+(19, 'Pirojpur', 5),
+(20, 'Jhalokati', 5),
+(21, 'Sylhet', 6),
+(22, 'Moulvibazar', 6),
+(23, 'Sunamganj', 6),
+(24, 'Habiganj', 6),
+(25, 'Rangpur', 7),
+(26, 'Dinajpur', 7),
+(27, 'Gaibandha', 7),
+(28, 'Kurigram', 7),
+(29, 'Mymensingh', 8),
+(30, 'Jamalpur', 8),
+(31, 'Sherpur', 8),
+(32, 'Netrokona', 8);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_divisions`
+--
+
+CREATE TABLE `tbl_divisions` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_divisions`
+--
+
+INSERT INTO `tbl_divisions` (`id`, `name`) VALUES
+(1, 'Dhaka'),
+(2, 'Chittagong'),
+(3, 'Rajshahi'),
+(4, 'Khulna'),
+(5, 'Barisal'),
+(6, 'Sylhet'),
+(7, 'Rangpur'),
+(8, 'Mymensingh');
 
 -- --------------------------------------------------------
 
@@ -71,6 +145,19 @@ INSERT INTO `tbl_users` (`user_id`, `name`, `email`, `password`) VALUES
 --
 
 --
+-- Indexes for table `tbl_districts`
+--
+ALTER TABLE `tbl_districts`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `division_id` (`division_id`);
+
+--
+-- Indexes for table `tbl_divisions`
+--
+ALTER TABLE `tbl_divisions`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tbl_users`
 --
 ALTER TABLE `tbl_users`
@@ -85,6 +172,16 @@ ALTER TABLE `tbl_users`
 --
 ALTER TABLE `tbl_users`
   MODIFY `user_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tbl_districts`
+--
+ALTER TABLE `tbl_districts`
+  ADD CONSTRAINT `tbl_districts_ibfk_1` FOREIGN KEY (`division_id`) REFERENCES `tbl_divisions` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
