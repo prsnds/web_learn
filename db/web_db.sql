@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2023 at 10:17 PM
+-- Generation Time: Jun 17, 2023 at 01:23 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -51,8 +51,8 @@ INSERT INTO `tbl_countries` (`country`, `code`) VALUES
 --
 
 CREATE TABLE `tbl_districts` (
-  `id` int(11) NOT NULL,
-  `dis_name` varchar(255) DEFAULT NULL,
+  `district_id` int(11) NOT NULL,
+  `district_name` varchar(255) DEFAULT NULL,
   `division_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -60,7 +60,7 @@ CREATE TABLE `tbl_districts` (
 -- Dumping data for table `tbl_districts`
 --
 
-INSERT INTO `tbl_districts` (`id`, `dis_name`, `division_id`) VALUES
+INSERT INTO `tbl_districts` (`district_id`, `district_name`, `division_id`) VALUES
 (1, 'Dhaka', 1),
 (2, 'Gazipur', 1),
 (3, 'Narayanganj', 1),
@@ -101,15 +101,15 @@ INSERT INTO `tbl_districts` (`id`, `dis_name`, `division_id`) VALUES
 --
 
 CREATE TABLE `tbl_divisions` (
-  `id` int(11) NOT NULL,
-  `div_name` varchar(255) DEFAULT NULL
+  `division_id` int(11) NOT NULL,
+  `division_name` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tbl_divisions`
 --
 
-INSERT INTO `tbl_divisions` (`id`, `div_name`) VALUES
+INSERT INTO `tbl_divisions` (`division_id`, `division_name`) VALUES
 (1, 'Dhaka'),
 (2, 'Chittagong'),
 (3, 'Rajshahi'),
