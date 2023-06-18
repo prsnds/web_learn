@@ -7,8 +7,6 @@ $password='';
 
 $conn=mysqli_connect($hostname,$username,$password,$database);
 
-
-
 ?>
 
 

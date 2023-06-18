@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 17, 2023 at 01:23 PM
+-- Generation Time: Jun 18, 2023 at 08:33 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -122,6 +122,18 @@ INSERT INTO `tbl_divisions` (`division_id`, `division_name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_ps`
+--
+
+CREATE TABLE `tbl_ps` (
+  `ps_id` int(11) NOT NULL,
+  `ps_name` varchar(100) DEFAULT NULL,
+  `district_id` int(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_users`
 --
 
@@ -147,6 +159,26 @@ INSERT INTO `tbl_users` (`user_id`, `name`, `email`, `password`) VALUES
 --
 
 --
+-- Indexes for table `tbl_districts`
+--
+ALTER TABLE `tbl_districts`
+  ADD PRIMARY KEY (`district_id`),
+  ADD KEY `division_id` (`division_id`);
+
+--
+-- Indexes for table `tbl_divisions`
+--
+ALTER TABLE `tbl_divisions`
+  ADD PRIMARY KEY (`division_id`);
+
+--
+-- Indexes for table `tbl_ps`
+--
+ALTER TABLE `tbl_ps`
+  ADD PRIMARY KEY (`ps_id`),
+  ADD KEY `district_id` (`district_id`);
+
+--
 -- Indexes for table `tbl_users`
 --
 ALTER TABLE `tbl_users`
@@ -157,10 +189,38 @@ ALTER TABLE `tbl_users`
 --
 
 --
+-- AUTO_INCREMENT for table `tbl_districts`
+--
+ALTER TABLE `tbl_districts`
+  MODIFY `district_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+
+--
+-- AUTO_INCREMENT for table `tbl_divisions`
+--
+ALTER TABLE `tbl_divisions`
+  MODIFY `division_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
 -- AUTO_INCREMENT for table `tbl_users`
 --
 ALTER TABLE `tbl_users`
   MODIFY `user_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=556;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tbl_districts`
+--
+ALTER TABLE `tbl_districts`
+  ADD CONSTRAINT `tbl_districts_ibfk_1` FOREIGN KEY (`division_id`) REFERENCES `tbl_divisions` (`division_id`);
+
+--
+-- Constraints for table `tbl_ps`
+--
+ALTER TABLE `tbl_ps`
+  ADD CONSTRAINT `tbl_ps_ibfk_1` FOREIGN KEY (`district_id`) REFERENCES `tbl_districts` (`district_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
