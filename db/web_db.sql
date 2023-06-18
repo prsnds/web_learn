@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 18, 2023 at 08:33 AM
+-- Generation Time: Jun 18, 2023 at 10:13 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -20,29 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `web_db`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_countries`
---
-
-CREATE TABLE `tbl_countries` (
-  `country` varchar(255) DEFAULT NULL,
-  `code` varchar(10) NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `tbl_countries`
---
-
-INSERT INTO `tbl_countries` (`country`, `code`) VALUES
-('bangladesh', '10'),
-('usa', '3'),
-('italy', '5'),
-('france', '6'),
-('germany', '7'),
-('india', '5');
 
 -- --------------------------------------------------------
 
