@@ -12,19 +12,30 @@
 
 <body>
 
-    <div id="address">
+    <form action="" method="post">
         <select name="division" id="division">
-            <option>--- Select ---</option>
             <?php
+            echo "<option>"."select division"."</option>";
             $sql = "select * from tbl_divisions order by division_id";
             $result = mysqli_query($conn, $sql);
-
             while ($row = mysqli_fetch_array($result)) {
                 ?>
                 <option value="<?= $row['division_id']; ?>"> <?= $row['division_name']; ?></option>
             <?php } ?>
         </select>
-    </div>
+
+
+        <select name="district" id="district">
+
+        </select>
+
+        <select name="ps" id="ps">
+
+        </select>
+
+        <input type="button" value="submit" name="submit">
+    </form>
+
 
 
 
@@ -32,42 +43,7 @@
 
 
     <script src="jq_min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            var div=document.createElement('div');
-            $('#division').change(function () {
-                var divisionID = $(this).val();
-                $.ajax({
-                    url: "action.php",
-                    method: "POST",
-                    data: { divid: divisionID },
-                    success: function (data) {
-                        div.innerHTML=data;
-                        document.getElementById('address').appendChild(div);
-                    }
-                })
-
-            });
-
-            $('#district').change(function () {
-                var districtID = $(this).val();
-
-                $.ajax({
-                    url: "action1.php",
-                    method: "POST",
-                    data: { disid: districtID },
-                    success: function (adata) {
-                        div.innerHTML=adata;
-                        document.getElementById('address').appendChild(div);
-                    }
-                })
-
-            });
-        });
-
-
-
-    </script>
+    <script src="drop_down.js"></script>
 
 </body>
 

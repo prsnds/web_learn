@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 18, 2023 at 10:13 PM
+-- Generation Time: Jun 19, 2023 at 01:09 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -107,6 +107,18 @@ CREATE TABLE `tbl_ps` (
   `ps_name` varchar(100) DEFAULT NULL,
   `district_id` int(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_ps`
+--
+
+INSERT INTO `tbl_ps` (`ps_id`, `ps_name`, `district_id`) VALUES
+(1001, 'dhaka_001', 1),
+(1002, 'dhaka_002', 1),
+(1003, 'dhaka_003', 1),
+(5001, 'chittagong_001', 5),
+(5002, 'chittagong_002', 5),
+(5003, 'chittagong_003', 5);
 
 -- --------------------------------------------------------
 

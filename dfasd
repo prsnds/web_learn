@@ -1,0 +1,7 @@
+INSERT INTO `web_db.tbl_ps`(`ps_id`, `ps_name`, `district_id`) VALUES
+(001001,'dhaka_001',1),
+(001002,'dhaka_002',1),
+(001003,'dhaka_003',1),
+(005001,'chittagong_001',5),
+(005002,'chittagong_002',5),
+(005003,'chittagong_003',5);
