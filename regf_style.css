@@ -1,0 +1,17 @@
+.main-title{
+    text-align: right;
+    text-transform: capitalize;
+}
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    color: black;
+}
+input {
+    padding: 5px 10px;
+    border: 1.5px solid black;
+}
