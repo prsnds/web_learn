@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('#division').change(function () {
         var divisionID = $(this).val();
         $.ajax({
-            url: "action.php",
+            url: "division_action.php",
             method: "POST",
             data: { divid: divisionID },
             success: function (data) {
@@ -15,7 +15,7 @@ $(document).ready(function () {
     $('#district').change(function () {
         var districtID = $(this).val();
         $.ajax({
-            url: "action1.php",
+            url: "district_action.php",
             method: "POST",
             data: { disid: districtID },
             success: function (data) {
@@ -24,4 +24,10 @@ $(document).ready(function () {
         })
 
     });
+
+    
+    // $('#ps').change(function () {
+    //   document.getElementById('hsestrt').innerHTML= <
+    // });
+
 });

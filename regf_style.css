@@ -7,11 +7,18 @@ div {
 }
 
 label {
-    display: inline-block;
+
+    margin-right: 20px;
+    margin-left: 20px;
+    /* display: inline-block;
     width: 200px;
-    color: black;
+    color: black; */
 }
 input {
     padding: 5px 10px;
     border: 1.5px solid black;
+}
+
+#district{
+    display: flex;
 }
