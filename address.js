@@ -2,9 +2,9 @@ $(document).ready(function () {
     $('#division').change(function () {
         var divisionID = $(this).val();
         $.ajax({
-            url: "division_action.php",
+            url: "select_district.php",
             method: "POST",
-            data: { divid: divisionID },
+            data: { divId: divisionID },
             success: function (data) {
               $('#district').html(data);
             }
@@ -15,19 +15,28 @@ $(document).ready(function () {
     $('#district').change(function () {
         var districtID = $(this).val();
         $.ajax({
-            url: "district_action.php",
+            
+            url: "select_upazila.php",
             method: "POST",
-            data: { disid: districtID },
+            data: { disId: districtID },
             success: function (data) {
-                $('#ps').html(data);
+                $('#upazila').html(data);
             }
         })
 
     });
 
-    
-    // $('#ps').change(function () {
-    //   document.getElementById('hsestrt').innerHTML= <
-    // });
+    $('#upazila').change(function () {
+        var upazilaID = $(this).val();
+        $.ajax({
+            url: "select_union.php",
+            method: "POST",
+            data: { upaId: upazilaID },
+            success: function (data) {
+                $('union').html(data);
+            }
+        })
+
+    });
 
 });
