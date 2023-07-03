@@ -1,28 +1,4 @@
-div{
-    margin-bottom: 10px;
-}
-
 label {
-
-    margin-right: 20px;
-    margin-left: 20px;
-    display: inline-block;
-    width: 200px;
-    color: black;
     text-transform: capitalize;
 }
-input {
-    padding: 5px 10px;
-    border: 1.5px solid black;
-}
-#marital_status {
-    input{
-        padding: 5px 10px;
-        border: 5px solid red;
 
-    }
-}
-select{
-    padding: 5px 10px;
-    border : 1.5px solid black;
-}
