@@ -1,4 +1,15 @@
 label {
     text-transform: capitalize;
+    
 }
 
+#main_title{
+    text-transform: capitalize;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+.row{
+
+    padding-bottom: 5px;
+}

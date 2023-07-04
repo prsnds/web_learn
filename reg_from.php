@@ -15,9 +15,9 @@
     <div class="container">
         
 
-        <div class="row">
-            <div class="text-center bg-dark text-white">
-                <h4>student registration form</h1>
+        <div class="row d-flex justify-content-center w-25">
+            <div class=" bg-dark text-white rounded-5 mt-2 mb-3>
+                <h4 id="main_title">student registration form</h1>
             </div>
         </div>
 
@@ -25,7 +25,7 @@
 
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 bg-dark text-white bd-dark w-">
                     <label for="fname">first name</label>
                 </div>
                 <div class="col-8">
@@ -35,7 +35,7 @@
 
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 bg-dark text-white">
                     <label for="lname">last name</label>
                 </div>
                 <div class="col-8">
@@ -44,7 +44,7 @@
             </div>
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 bg-dark text-white">
                     <label for="gender">gender</label>
                 </div>
                 <div class="col-8">
@@ -57,7 +57,7 @@
 
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 bg-dark text-white">
                     <label for="dob">date of birth </label>
                 </div>
                 <div class="col-8">
@@ -66,7 +66,7 @@
             </div>
 
             <div class="row" id="marital_status">
-                <div class="col-4">
+                <div class="col-4 bg-dark text-white">
                     <label for="marital_status">marital status</label>
                 </div>
                 <div class="col-8">
@@ -80,7 +80,7 @@
             </div>
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 bg-dark text-white">
                     <label for="email">email address</label>
                 </div>
                 <div class="col-8">
@@ -90,7 +90,7 @@
 
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 bg-dark text-white">
                     <label for="password">password</label>
                 </div>
                 <div class="col-8">
@@ -101,7 +101,7 @@
 
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 bg-dark text-white">
                     <label for="confirm_password">confirm_password</label>
                 </div>
                 <div class="col-8">
@@ -110,7 +110,7 @@
             </div>
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 bg-dark text-white">
                     <label for="phone">phone</label>
                 </div>
                 <div class="col-8">
@@ -119,7 +119,7 @@
             </div>
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 bg-dark text-white">
                     <label for="address">address</label>
                 </div>
                 <div class="col-8">
@@ -130,7 +130,7 @@
 
             <div class="row">
 
-                <div class="col-4">
+                <div class="col-4 bg-dark text-white">
                     <label for="state">state</label>
                 </div>
                 <div class="col-8 w-200">
@@ -148,7 +148,7 @@
 
             </div>
             <div class="row" id="hobbies">
-                <div class="col-4"><label for="hobbies">hobbies</label></div>
+                <div class="col-4 bg-dark text-white"><label for="hobbies">hobbies</label></div>
                 <div class="col-8">
                     <input type="checkbox" name="music" id="music">
                     <label for="music">music</label>
@@ -163,7 +163,7 @@
             </div>
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 bg-dark text-white">
                     <label for="upload_photos">photos</label>
                 </div>
                 <div class="col-8">
