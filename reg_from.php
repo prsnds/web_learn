@@ -15,8 +15,8 @@
     <div class="container">
         
 
-        <div class="row d-flex justify-content-center w-25">
-            <div class=" bg-dark text-white rounded-5 mt-2 mb-3>
+        <div class="row d-flex justify-content-center">
+            <div class="bg-dark text-white rounded mt-2 mb-3">
                 <h4 id="main_title">student registration form</h1>
             </div>
         </div>
@@ -25,116 +25,116 @@
 
 
             <div class="row">
-                <div class="col-4 bg-dark text-white bd-dark w-">
+                <div class="col-md-2 bg-dark text-white form-group rounded">
                     <label for="fname">first name</label>
                 </div>
-                <div class="col-8">
-                    <input type="text" name="fname" placeholder="eg:jhon">
+                <div class="col-10">
+                    <input class="rounded" type="text" name="fname" placeholder="eg:jhon">
                 </div>
             </div>
 
 
             <div class="row">
-                <div class="col-4 bg-dark text-white">
+                <div class="col-md-2 bg-dark text-white form-group rounded">
                     <label for="lname">last name</label>
                 </div>
-                <div class="col-8">
-                    <input type="text" name="lname" placeholder="eg:doe">
+                <div class="col-10">
+                    <input class="rounded" type="text" name="lname" placeholder="eg:doe">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-4 bg-dark text-white">
+                <div class="col-md-2 bg-dark text-white form-group rounded">
                     <label for="gender">gender</label>
                 </div>
-                <div class="col-8">
-                    <input type="radio" name="gender" id="gender">
+                <div class="col-10">
+                    <input class="rounded" type="radio" name="gender" id="gender">
                     <label for="male">male</label>
-                    <input type="radio" name="gender" id="gender">
+                    <input class="rounded" type="radio" name="gender" id="gender">
                     <label for="female">female</label>
                 </div>
             </div>
 
 
             <div class="row">
-                <div class="col-4 bg-dark text-white">
+                <div class="col-md-2 bg-dark text-white form-group rounded">
                     <label for="dob">date of birth </label>
                 </div>
-                <div class="col-8">
-                    <input type="date" name="dob">
+                <div class="col-10">
+                    <input class="rounded" type="date" name="dob">
                 </div>
             </div>
 
             <div class="row" id="marital_status">
-                <div class="col-4 bg-dark text-white">
+                <div class="col-md-2 bg-dark text-white form-group rounded">
                     <label for="marital_status">marital status</label>
                 </div>
-                <div class="col-8">
-                    <input type="checkbox" name="marital_status" id="unmarried">
+                <div class="col-10">
+                    <input class="rounded" type="checkbox" name="marital_status" id="unmarried">
                     <label for="unmarried">unmarried</label>
-                    <input type="checkbox" name="marital_status" id="married">
+                    <input class="rounded" type="checkbox" name="marital_status" id="married">
                     <label for="married">married</label>
-                    <input type="checkbox" name="marital_status" id="single">
+                    <input class="rounded" type="checkbox" name="marital_status" id="single">
                     <label for="single">single</label>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-4 bg-dark text-white">
+                <div class="col-md-2 bg-dark text-white form-group rounded">
                     <label for="email">email address</label>
                 </div>
-                <div class="col-8">
-                    <input type="email" name="email" id="email">
+                <div class="col-10">
+                    <input class="rounded" type="email" name="email" id="email">
                 </div>
             </div>
 
 
             <div class="row">
-                <div class="col-4 bg-dark text-white">
+                <div class="col-md-2 bg-dark text-white form-group rounded">
                     <label for="password">password</label>
                 </div>
-                <div class="col-8">
-                    <input type="password" name="password" id="password">
+                <div class="col-10">
+                    <input class="rounded" type="password" name="password" id="password">
                 </div>
             </div>
 
 
 
             <div class="row">
-                <div class="col-4 bg-dark text-white">
-                    <label for="confirm_password">confirm_password</label>
+                <div class="col-md-2 bg-dark text-white form-group rounded">
+                    <label for="confirm_password">confirm password</label>
                 </div>
-                <div class="col-8">
-                    <input type="password" name="confirm_password" id="confirm_password">
+                <div class="col-10">
+                    <input class="rounded" type="password" name="confirm_password" id="confirm_password">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-4 bg-dark text-white">
+                <div class="col-md-2 bg-dark text-white form-group rounded">
                     <label for="phone">phone</label>
                 </div>
-                <div class="col-8">
-                    <input type="tel" name="phone" id="phone">
+                <div class="col-10">
+                    <input class="rounded" type="tel" name="phone" id="phone">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-4 bg-dark text-white">
+                <div class="col-md-2 bg-dark text-white form-group rounded">
                     <label for="address">address</label>
                 </div>
-                <div class="col-8">
-                    <input type="text" name="address" id="address">
+                <div class="col-10">
+                    <input class="rounded" type="text" name="address" id="address">
                 </div>
             </div>
 
 
             <div class="row">
 
-                <div class="col-4 bg-dark text-white">
+                <div class="col-md-2 bg-dark text-white form-group rounded">
                     <label for="state">state</label>
                 </div>
-                <div class="col-8 w-200">
-                    <select name="state" id="state">
+                <div class="col-10">
+                    <select name="state" id="state" class="rounded">
                         <?php
                         echo "<option>" . "select division" . "</option>";
                         $sql = "select * from tbl_divisions order by division_id";
@@ -148,36 +148,35 @@
 
             </div>
             <div class="row" id="hobbies">
-                <div class="col-4 bg-dark text-white"><label for="hobbies">hobbies</label></div>
-                <div class="col-8">
-                    <input type="checkbox" name="music" id="music">
+                <div class="col-md-2 bg-dark text-white form-group rounded"><label for="hobbies">hobbies</label></div>
+                <div class="col-10">
+                    <input class="rounded" type="checkbox" name="music" id="music">
                     <label for="music">music</label>
-                    <input type="checkbox" name="movies" id="movies">
+                    <input class="rounded" type="checkbox" name="movies" id="movies">
                     <label for="movies">movies</label>
-                    <input type="checkbox" name="sports" id="sports">
+                    <input class="rounded" type="checkbox" name="sports" id="sports">
                     <label for="sports">sports</label>
-                    <input type="checkbox" name="travel" id="travel">
+                    <input class="rounded" type="checkbox" name="travel" id="travel">
                     <label for="travel">travel</label>
                 </div>
 
             </div>
 
             <div class="row">
-                <div class="col-4 bg-dark text-white">
+                <div class="col-md-2 bg-dark text-white form-group rounded">
                     <label for="upload_photos">photos</label>
                 </div>
-                <div class="col-8">
-                    <input type="file" name="upload_photos" id="upload_photos">
+                <div class="col-10">
+                    <input class="input-group-append" type="file" name="upload_photos" id="upload_photos">
                 </div>
             </div>
 
             <div class="row">
                 <div class="modal-footer">
-                    <input type="checkbox" name="declaretion" id="declaretion">
+                    <input class="rounded" type="checkbox" name="declaretion" id="declaretion">
                     <label for="declaretion">
-                        i here by declare that
-                        the above information is provided is true
-                        and corrected
+                        i here by declare that the above information 
+                        is provided is true and corrected
                     </label>
                 </div>
             </div>
@@ -185,10 +184,10 @@
             
             <div class="row">
                 <div class="col-6 text-center">
-                    <input type="button" value="register" class="btn btn-outline-primary" name="register">
+                    <input class="rounded" type="button" value="register" class="btn btn-outline-primary" name="register">
                 </div>
                 <div class="col-6 text-center">
-                    <input type="button" value="reset" class="btn btn-outline-danger" name="reset">
+                    <input class="rounded" type="button" value="reset" class="btn btn-outline-danger" name="reset">
                 </div>
             </div>
 
