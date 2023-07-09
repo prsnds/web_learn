@@ -12,129 +12,128 @@
 
 <body>
 
+    
     <div class="container">
-        
-
-        <div class="row d-flex justify-content-center">
-            <div class="bg-dark text-white rounded mt-2 mb-3">
+        <div class="row justify-content-center">
+            <div class="bg-info text-white rounded mt-2 mb-3">
                 <h4 id="main_title">student registration form</h1>
             </div>
         </div>
+        <div class="row d-flex justify-content-center">
+        <form  class="form" action="" method="post">
 
-        <form action="" method="post">
 
-
-            <div class="row">
-                <div class="col-md-2 bg-dark text-white form-group rounded">
+            <div class="form-row p-2">
+                <div class="col-md-4 bg-primary text-white  rounded">
                     <label for="fname">first name</label>
                 </div>
-                <div class="col-10">
-                    <input class="rounded" type="text" name="fname" placeholder="eg:jhon">
+                <div class="col-md-8">
+                    <input class="rounded bd-warning" type="text" name="fname" placeholder="eg:jhon">
                 </div>
             </div>
 
 
-            <div class="row">
-                <div class="col-md-2 bg-dark text-white form-group rounded">
+            <div class="form-row p-2">
+                <div class="col-md-4 bg-primary text-white  rounded">
                     <label for="lname">last name</label>
                 </div>
-                <div class="col-10">
-                    <input class="rounded" type="text" name="lname" placeholder="eg:doe">
+                <div class="col-md-8">
+                    <input class="rounded bd-warning" type="text" name="lname" placeholder="eg:doe">
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-2 bg-dark text-white form-group rounded">
+            <div class="form-row p-2">
+                <div class="col-md-4 bg-primary text-white  rounded">
                     <label for="gender">gender</label>
                 </div>
-                <div class="col-10">
-                    <input class="rounded" type="radio" name="gender" id="gender">
+                <div class="col-md-8 form-radio">
+                    <input class="rounded bd-warning" type="radio" name="gender" id="gender">
                     <label for="male">male</label>
-                    <input class="rounded" type="radio" name="gender" id="gender">
+                    <input class="rounded bd-warning" type="radio" name="gender" id="gender">
                     <label for="female">female</label>
                 </div>
             </div>
 
 
-            <div class="row">
-                <div class="col-md-2 bg-dark text-white form-group rounded">
+            <div class="form-row p-2">
+                <div class="col-md-4 bg-primary text-white  rounded">
                     <label for="dob">date of birth </label>
                 </div>
-                <div class="col-10">
-                    <input class="rounded" type="date" name="dob">
+                <div class="col-md-8">
+                    <input class="rounded w-50" type="date" name="dob">
                 </div>
             </div>
 
-            <div class="row" id="marital_status">
-                <div class="col-md-2 bg-dark text-white form-group rounded">
+            <div class="form-row p-2" id="marital_status">
+                <div class="col-md-4 bg-primary text-white  rounded">
                     <label for="marital_status">marital status</label>
                 </div>
-                <div class="col-10">
-                    <input class="rounded" type="checkbox" name="marital_status" id="unmarried">
+                <div class="col-md-8 form-radio">
+                    <input class="rounded bd-warning" type="radio" name="marital_status" id="unmarried">
                     <label for="unmarried">unmarried</label>
-                    <input class="rounded" type="checkbox" name="marital_status" id="married">
+                    <input class="rounded bd-warning" type="radio" name="marital_status" id="married">
                     <label for="married">married</label>
-                    <input class="rounded" type="checkbox" name="marital_status" id="single">
+                    <input class="rounded bd-warning" type="radio" name="marital_status" id="single">
                     <label for="single">single</label>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-2 bg-dark text-white form-group rounded">
+            <div class="form-row p-2">
+                <div class="col-md-4 bg-primary text-white  rounded">
                     <label for="email">email address</label>
                 </div>
-                <div class="col-10">
-                    <input class="rounded" type="email" name="email" id="email">
+                <div class="col-md-8">
+                    <input class="rounded bd-warning" type="email" name="email" id="email">
                 </div>
             </div>
 
 
-            <div class="row">
-                <div class="col-md-2 bg-dark text-white form-group rounded">
+            <div class="form-row p-2">
+                <div class="col-md-4 bg-primary text-white  rounded">
                     <label for="password">password</label>
                 </div>
-                <div class="col-10">
-                    <input class="rounded" type="password" name="password" id="password">
+                <div class="col-md-8">
+                    <input class="rounded bd-warning" type="password" name="password" id="password">
                 </div>
             </div>
 
 
 
-            <div class="row">
-                <div class="col-md-2 bg-dark text-white form-group rounded">
+            <div class="form-row p-2">
+                <div class="col-md-4 bg-primary text-white  rounded">
                     <label for="confirm_password">confirm password</label>
                 </div>
-                <div class="col-10">
-                    <input class="rounded" type="password" name="confirm_password" id="confirm_password">
+                <div class="col-md-8">
+                    <input class="rounded bd-warning" type="password" name="confirm_password" id="confirm_password">
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-2 bg-dark text-white form-group rounded">
+            <div class="form-row p-2">
+                <div class="col-md-4 bg-primary text-white  rounded">
                     <label for="phone">phone</label>
                 </div>
-                <div class="col-10">
-                    <input class="rounded" type="tel" name="phone" id="phone">
+                <div class="col-md-8">
+                    <input class="rounded bd-warning" type="tel" name="phone" id="phone">
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-2 bg-dark text-white form-group rounded">
+            <div class="form-row p-2">
+                <div class="col-md-4 bg-primary text-white  rounded">
                     <label for="address">address</label>
                 </div>
-                <div class="col-10">
-                    <input class="rounded" type="text" name="address" id="address">
+                <div class="col-md-8">
+                    <input class="rounded bd-warning" type="text" name="address" id="address">
                 </div>
             </div>
 
 
-            <div class="row">
+            <div class="form-row p-2">
 
-                <div class="col-md-2 bg-dark text-white form-group rounded">
+                <div class="col-md-4 bg-primary text-white  rounded">
                     <label for="state">state</label>
                 </div>
-                <div class="col-10">
-                    <select name="state" id="state" class="rounded">
+                <div class="col-md-8">
+                    <select class="custome-select rounded w-50" name="state" id="state" class="rounded">
                         <?php
                         echo "<option>" . "select division" . "</option>";
                         $sql = "select * from tbl_divisions order by division_id";
@@ -147,34 +146,34 @@
                 </div>
 
             </div>
-            <div class="row" id="hobbies">
-                <div class="col-md-2 bg-dark text-white form-group rounded"><label for="hobbies">hobbies</label></div>
-                <div class="col-10">
-                    <input class="rounded" type="checkbox" name="music" id="music">
+            <div class="form-row p-2" id="hobbies">
+                <div class="col-md-4 bg-primary text-white  rounded"><label for="hobbies">hobbies</label></div>
+                <div class="col-md-8 form-check">
+                    <input class="rounded bd-warning" type="checkbox" name="music" id="music">
                     <label for="music">music</label>
-                    <input class="rounded" type="checkbox" name="movies" id="movies">
+                    <input class="rounded bd-warning" type="checkbox" name="movies" id="movies">
                     <label for="movies">movies</label>
-                    <input class="rounded" type="checkbox" name="sports" id="sports">
+                    <input class="rounded bd-warning" type="checkbox" name="sports" id="sports">
                     <label for="sports">sports</label>
-                    <input class="rounded" type="checkbox" name="travel" id="travel">
+                    <input class="rounded bd-warning" type="checkbox" name="travel" id="travel">
                     <label for="travel">travel</label>
                 </div>
 
             </div>
 
-            <div class="row">
-                <div class="col-md-2 bg-dark text-white form-group rounded">
+            <div class="form-row p-2">
+                <div class="col-md-4 bg-primary text-white  rounded">
                     <label for="upload_photos">photos</label>
                 </div>
-                <div class="col-10">
-                    <input class="input-group-append" type="file" name="upload_photos" id="upload_photos">
+                <div class="col-md-8">
+                    <input class="custom-file rounded-3" type="file" name="upload_photos" id="upload_photos">
                 </div>
             </div>
 
-            <div class="row">
+            <div class="form-row p-2">
                 <div class="modal-footer">
-                    <input class="rounded" type="checkbox" name="declaretion" id="declaretion">
-                    <label for="declaretion">
+                    <input class="rounded form-check " type="checkbox" name="declaretion" id="declaretion">
+                    <label class="bg-info rounded p-2" for="declaretion">
                         i here by declare that the above information 
                         is provided is true and corrected
                     </label>
@@ -182,17 +181,19 @@
             </div>
             
             
-            <div class="row">
+            <div class="form-row p-2">
                 <div class="col-6 text-center">
-                    <input class="rounded" type="button" value="register" class="btn btn-outline-primary" name="register">
+                    <button type="button" class="btn btn-success"value="register" name="register" >register</button>
                 </div>
                 <div class="col-6 text-center">
-                    <input class="rounded" type="button" value="reset" class="btn btn-outline-danger" name="reset">
+                    <button type="button" class="btn btn-warning" value="reset" name="reset" >reset</button>
                 </div>
             </div>
 
         </form>
+        </div>
     </div>
+
     <script src="jq_min.js"></script>
     <script src="address.js"></script>
 </body>

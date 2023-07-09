@@ -1,4 +1,0 @@
-ALTER TABLE 'web_db.tbl_divisions'
-RENAME COLUMN id TO division_id,
-RENAME COLUMN name TO division_name,
-RENAME COLUMN bn_name TO div_bn_name;
