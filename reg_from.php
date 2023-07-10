@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center">
-        <form  class="form" action="" method="post">
+        <form  class="form" action="form_action.php" method="post">
 
 
             <div class="form-row p-2">
@@ -28,7 +28,7 @@
                     <label for="fname">first name</label>
                 </div>
                 <div class="col-md-8">
-                    <input class="rounded bd-warning" type="text" name="fname" placeholder="eg:jhon">
+                    <input class="rounded bd-warning" type="text" name="first_name" placeholder="eg:jhon">
                 </div>
             </div>
 
@@ -38,7 +38,7 @@
                     <label for="lname">last name</label>
                 </div>
                 <div class="col-md-8">
-                    <input class="rounded bd-warning" type="text" name="lname" placeholder="eg:doe">
+                    <input class="rounded bd-warning" type="text" name="last_name" placeholder="eg:doe">
                 </div>
             </div>
 
@@ -83,7 +83,7 @@
                     <label for="email">email address</label>
                 </div>
                 <div class="col-md-8">
-                    <input class="rounded bd-warning" type="email" name="email" id="email">
+                    <input class="rounded bd-warning" type="email" name="email_address" id="email">
                 </div>
             </div>
 
@@ -113,7 +113,7 @@
                     <label for="phone">phone</label>
                 </div>
                 <div class="col-md-8">
-                    <input class="rounded bd-warning" type="tel" name="phone" id="phone">
+                    <input class="rounded bd-warning" type="tel" name="phone_no" id="phone">
                 </div>
             </div>
 
@@ -122,7 +122,7 @@
                     <label for="address">address</label>
                 </div>
                 <div class="col-md-8">
-                    <input class="rounded bd-warning" type="text" name="address" id="address">
+                    <input class="rounded bd-warning" type="text" name="address_no" id="address">
                 </div>
             </div>
 
@@ -149,13 +149,13 @@
             <div class="form-row p-2" id="hobbies">
                 <div class="col-md-4 bg-primary text-white  rounded"><label for="hobbies">hobbies</label></div>
                 <div class="col-md-8 form-check">
-                    <input class="rounded bd-warning" type="checkbox" name="music" id="music">
+                    <input class="rounded bd-warning" type="checkbox" name="hobbies" id="music">
                     <label for="music">music</label>
-                    <input class="rounded bd-warning" type="checkbox" name="movies" id="movies">
+                    <input class="rounded bd-warning" type="checkbox" name="hobbies" id="movies">
                     <label for="movies">movies</label>
-                    <input class="rounded bd-warning" type="checkbox" name="sports" id="sports">
+                    <input class="rounded bd-warning" type="checkbox" name="hobbies" id="sports">
                     <label for="sports">sports</label>
-                    <input class="rounded bd-warning" type="checkbox" name="travel" id="travel">
+                    <input class="rounded bd-warning" type="checkbox" name="hobbies" id="travel">
                     <label for="travel">travel</label>
                 </div>
 
@@ -166,7 +166,7 @@
                     <label for="upload_photos">photos</label>
                 </div>
                 <div class="col-md-8">
-                    <input class="custom-file rounded-3" type="file" name="upload_photos" id="upload_photos">
+                    <input class="custom-file rounded-3" type="file" name="photo" id="upload_photos">
                 </div>
             </div>
 

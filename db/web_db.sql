@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 09, 2023 at 11:08 AM
+-- Generation Time: Jul 10, 2023 at 01:11 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -57,16 +57,16 @@ CREATE TABLE `tbl_users` (
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `gender` varchar(5) NOT NULL,
-  `date_of_birth` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `dob` date NOT NULL,
   `marital_status` varchar(5) NOT NULL,
   `email_address` varchar(255) NOT NULL,
-  `pass_word` varchar(255) NOT NULL,
-  `con_pass_word` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `confirm_password` varchar(255) NOT NULL,
   `phone_no` int(11) NOT NULL,
   `address_no` varchar(50) NOT NULL,
-  `states` varchar(50) NOT NULL,
+  `state` varchar(50) NOT NULL,
   `hobbies` varchar(50) NOT NULL,
-  `photo` tinyblob NOT NULL,
+  `photo` blob NOT NULL,
   `declaretion` bit(1) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

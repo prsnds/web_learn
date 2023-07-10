@@ -14,6 +14,4 @@ label {
 }
 
 input[type="checkbox"] {
-  display: grid;
-  place-content: center;
 }
