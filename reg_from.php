@@ -47,9 +47,9 @@
                     <label for="gender">gender</label>
                 </div>
                 <div class="col-md-8 form-radio">
-                    <input class="rounded bd-warning" type="radio" name="gender" id="gender">
+                    <input class="rounded bd-warning" type="radio" name="gender" value="male" id="gender">
                     <label for="male">male</label>
-                    <input class="rounded bd-warning" type="radio" name="gender" id="gender">
+                    <input class="rounded bd-warning" type="radio" name="gender" value="female" id="gender">
                     <label for="female">female</label>
                 </div>
             </div>
@@ -69,11 +69,11 @@
                     <label for="marital_status">marital status</label>
                 </div>
                 <div class="col-md-8 form-radio">
-                    <input class="rounded bd-warning" type="radio" name="marital_status" id="unmarried">
+                    <input class="rounded bd-warning" type="radio" name="marital_status" value="unmarried" id="unmarried">
                     <label for="unmarried">unmarried</label>
-                    <input class="rounded bd-warning" type="radio" name="marital_status" id="married">
+                    <input class="rounded bd-warning" type="radio" name="marital_status" value="married" id="married">
                     <label for="married">married</label>
-                    <input class="rounded bd-warning" type="radio" name="marital_status" id="single">
+                    <input class="rounded bd-warning" type="radio" name="marital_status" value="single" id="single">
                     <label for="single">single</label>
                 </div>
             </div>
@@ -90,10 +90,10 @@
 
             <div class="form-row p-2">
                 <div class="col-md-4 bg-primary text-white  rounded">
-                    <label for="password">password</label>
+                    <label for="pass_word">password</label>
                 </div>
                 <div class="col-md-8">
-                    <input class="rounded bd-warning" type="password" name="password" id="password">
+                    <input class="rounded bd-warning" type="pass_word" name="pass_word" id="pass_word">
                 </div>
             </div>
 
@@ -130,10 +130,10 @@
             <div class="form-row p-2">
 
                 <div class="col-md-4 bg-primary text-white  rounded">
-                    <label for="state">state</label>
+                    <label for="states">states</label>
                 </div>
                 <div class="col-md-8">
-                    <select class="custome-select rounded w-50" name="state" id="state" class="rounded">
+                    <select class="custome-select rounded w-50" name="states" id="states" class="rounded">
                         <?php
                         echo "<option>" . "select division" . "</option>";
                         $sql = "select * from tbl_divisions order by division_id";
@@ -149,13 +149,13 @@
             <div class="form-row p-2" id="hobbies">
                 <div class="col-md-4 bg-primary text-white  rounded"><label for="hobbies">hobbies</label></div>
                 <div class="col-md-8 form-check">
-                    <input class="rounded bd-warning" type="checkbox" name="hobbies" id="music">
+                    <input class="rounded bd-warning" type="checkbox" name="hobbies" value="music" id="music">
                     <label for="music">music</label>
-                    <input class="rounded bd-warning" type="checkbox" name="hobbies" id="movies">
+                    <input class="rounded bd-warning" type="checkbox" name="hobbies" value="movies" id="movies">
                     <label for="movies">movies</label>
-                    <input class="rounded bd-warning" type="checkbox" name="hobbies" id="sports">
+                    <input class="rounded bd-warning" type="checkbox" name="hobbies" value="sports" id="sports">
                     <label for="sports">sports</label>
-                    <input class="rounded bd-warning" type="checkbox" name="hobbies" id="travel">
+                    <input class="rounded bd-warning" type="checkbox" name="hobbies" value="travel" id="travel">
                     <label for="travel">travel</label>
                 </div>
 
@@ -184,10 +184,13 @@
             <div class="form-row p-2">
                 <div class="col-6 text-center">
                     <button type="button" class="btn btn-success"value="register" name="register" >register</button>
+                    <button type="submit" class="btn btn-success"value="submit" name="submit" >register</button>
                 </div>
-                <div class="col-6 text-center">
-                    <button type="button" class="btn btn-warning" value="reset" name="reset" >reset</button>
-                </div>
+                <!-- <div class="col-6 text-center" name="register">
+                    <button type="submit">
+                        submit
+                    </button>
+                </div> -->
             </div>
 
         </form>
